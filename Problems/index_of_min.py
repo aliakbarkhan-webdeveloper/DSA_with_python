@@ -1,4 +1,4 @@
-li=[222,1288,139]
+li=[1288,1288,2222]
 def mini(l):
     if l.__len__()==0:
         return None
