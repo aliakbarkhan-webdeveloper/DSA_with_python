@@ -12,7 +12,6 @@ def mini(l):
         else:
             res=l[max]
             min=max
-
         max+=1
     return res
 
