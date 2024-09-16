@@ -10,13 +10,11 @@ def fth(li):
             h3 = h2
             h2=h1
             h1=i
-
         elif i>=h2:
             h3=h2
             h2=i
-
         elif i>=h3:
             h3=i
-    return (h1,h2,h3)
+    return h3
 
-print(fth([4,6,2,9,0,5,10]))
+print(fth([11,6,2,9,0,5,10,15,14,13]))
