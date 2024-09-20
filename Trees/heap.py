@@ -20,6 +20,7 @@ def buildHeap(arr):
 
 heap=[100,5,3,2,8,15,6,102]
 buildHeap(heap)
+
 print(heap)
 
 
@@ -44,7 +45,27 @@ def build_min_heap(arr):
     for i in reversed(range(n//2)):
         min_heapify(arr,n,i)
 
-build_min_heap(heap)
-print(heap)
+heap2=[100,5,3,2,8,15,6,102]
+build_min_heap(heap2)
+
+print(heap2)
 
 #Heap sort
+def heap_sort(arr):
+    n= len(arr)
+
+    #build heap before sort
+    buildHeap(arr)
+
+    for i in reversed(range(n)):
+        #swap
+        arr[i],arr[0]=arr[0],arr[i]
+
+        #heapify root element again but only until the ith element
+        max_heapify(arr,i,0)
+
+
+
+heap3=[100,5,3,2,8,15,6,102]
+heap_sort(heap3)
+print(heap3)
